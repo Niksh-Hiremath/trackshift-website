@@ -11,18 +11,16 @@ export default function Hero() {
     <div className="flex flex-col md:flex-row items-center justify-around w-full px-4 pb-4 pt-8 md:px-8">
       <div className="flex flex-col items-center gap-4">
         <Image
-          src="/Trackshift.png"
+          src="/Trackshift.svg"
           alt="Trackshift Logo"
           width={500}
           height={500}
           className=""
         />
-        <p className="opacity-75 mt-2">
-          WHERE IDEAS PITSTOP & INNOVATION REFULES
-        </p>
+        <p className="opacity-75 mt-2">IN ASSOCIATION WITH</p>
         <div className="flex flex-row items-center">
           <Image
-            src="/DSBrar.png"
+            src="/DSBrar.svg"
             alt="DS Brar Logo"
             width={120}
             height={120}
@@ -30,7 +28,7 @@ export default function Hero() {
           />
           <div className="mx-4 opacity-50">|</div>
           <Image
-            src="/Hass.png"
+            src="/Hass.svg"
             alt="Money Gram Hass F1 Logo"
             width={120}
             height={120}

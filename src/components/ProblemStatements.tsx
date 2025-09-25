@@ -9,22 +9,22 @@ const problemStatements = [
     title: "Visual Difference Engine",
     description:
       "Build a general-purpose visual comparison engine that detects and classifies visual change across time-series images.",
-    whatToDeliver:
-      "A tool that ingests image sets, aligns and normalizes, highlights differences (logos, livery, body changes), and exports annotated reports (PDF/slide).",
+    applications:
+      "Manufacturing inspections, brand compliance, infrastructure degradation, compliance audits.",
   },
   {
     title: "Smart File Transfer System",
     description:
       "Build a fast, resilient file mover for unstable links — with integrity checks, priority channels and real-time status.",
-    whatToDeliver:
-      "A tool that ingests image sets, aligns and normalizes, highlights differences (logos, livery, body changes), and exports annotated reports (PDF/slide).",
+    applications:
+      "Media studios, rural labs, mobile clinics, remote engineering sites, racetrack ↔ factory setups, disaster sites.",
   },
   {
     title: "Competitive Mobility Systems Simulator",
     description:
       "Build a lightweight mobility event simulator that models many moving agents, events, and output a live leaderboard.",
-    whatToDeliver:
-      "A tool that ingests image sets, aligns and normalizes, highlights differences (logos, livery, body changes), and exports annotated reports (PDF/slide).",
+    applications:
+      "Formula E, MotoGP, drones, supply-chain races, traffic flow management.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function ProblemStatements() {
                 </h2>
                 <p>{problem.description}</p>
                 <p>
-                  <strong>What to Deliver:</strong> {problem.whatToDeliver}
+                  <strong>Applications:</strong> {problem.applications}
                 </p>
               </div>
               <Image

@@ -47,7 +47,7 @@ export default function Home() {
         />
       </svg> */}
       <Image
-        src="/HeroF1.png"
+        src="/HeroF1.svg"
         alt="F1 Car"
         width={800}
         height={600}

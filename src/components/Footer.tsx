@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="w-full flex flex-col md:flex-row justify-between items-center gap-4 px-4 md:px-8 pb-4">
       <Image
-        src="/Trackshift.png"
+        src="/Trackshift.svg"
         alt="Trackshift Logo"
         width={150}
         height={150}
