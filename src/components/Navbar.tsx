@@ -8,23 +8,25 @@ import Link from "next/link";
 export function PCNavbar() {
   return (
     <div className="w-full mx-4 lg:mx-8 flex items-center justify-between sticky top-0 left-0 pt-4 z-10">
-      <Link href="/" className="flex flex-row items-center">
-        <Image
-          src="/GeekRoom.svg"
-          alt="Geek Room Logo"
-          width={100}
-          height={100}
-          className="h-13 w-auto aspect-auto"
-        />
-        <div className="mx-2 opacity-50">|</div>
-        <Image
-          src="/LEAP.svg"
-          alt="LEAP Logo"
-          width={100}
-          height={100}
-          className="h-15 w-auto aspect-auto"
-        />
-      </Link>
+      <div className="mx-4">
+        <Link href="/" className="flex flex-row items-center">
+          <Image
+            src="/GeekRoom.svg"
+            alt="Geek Room Logo"
+            width={100}
+            height={100}
+            className="h-13 w-auto aspect-auto"
+          />
+          <div className="mx-2 opacity-50">|</div>
+          <Image
+            src="/LEAP.svg"
+            alt="LEAP Logo"
+            width={100}
+            height={100}
+            className="h-15 w-auto aspect-auto"
+          />
+        </Link>
+      </div>
       <ul className="flex flex-row gap-8">
         <li>
           <Link href="#problem-statements">Problem Statements</Link>

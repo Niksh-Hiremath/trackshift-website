@@ -10,16 +10,16 @@ export default function Prizes() {
       className="w-full flex flex-col items-center max-w-4xl max-md:px-10 gap-10 md:gap-6 z-1 scroll-mt-16"
       id="prizes"
     >
-      <h1 className={`${orbitron.className} text-3xl`}>
-        YOUR TICKET TO{" "}
+      <h1 className={`${orbitron.className} text-5xl whitespace-nowrap text-center`}>
+        Your Ticket To{" "}
         <span className="text-[#D6001C] font-bold">
-          HASS F1 GARAGE IN THE UK
+          MoneyGram Haas F1 Team Facility, UK
         </span>
         .
       </h1>
       <p className={`${orbitron.className} text-xl text-center px-4 mb-10`}>
         For the <span className="text-[#D6001C]">Top 3 teams</span>, because
-        every podium finish get a trophy.
+        every podium finish is rewarded.
       </p>
       <div className="flex flex-row w-full items-center gap-10">
         <div className="md:w-1/2 flex flex-col gap-2">
@@ -31,6 +31,7 @@ export default function Prizes() {
           <p className={`${orbitron.className} text-2xl`}>
             2 Day UK Trip to visit MoneyGram Haas F1 facilities
           </p>
+           <p className="text-[#aaaaaa] text-lg">Ride the fast lane to the MoneyGram Haas F1 Team Facility in the UK.</p>
           <p className="text-[#979797]">For Top 3 teams!</p>
         </div>
         <Image
@@ -58,6 +59,7 @@ export default function Prizes() {
           <p className={`${orbitron.className} text-2xl`}>
             1 - Month Internship Opportunity at Mphasis
           </p>
+          <p className="text-[#aaaaaa] text-lg">Ride the fast lane to the MoneyGram Haas F1 Team Facility in the UK.</p>
           <p className="text-[#979797]">For Top 3 teams!</p>
         </div>
       </div>

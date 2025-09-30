@@ -41,7 +41,7 @@ export default function ProblemStatements() {
         {problemStatements.map((problem, index) => (
           <div
             key={index}
-            className="relative md:w-1/3 flex flex-col items-center"
+            className="relative md:w-1/3 flex flex-col items-center mb-8 md:mb-0"
           >
             <div className="absolute inset-0 flex flex-col items-center justify-center h-full">
               <Image
@@ -55,8 +55,8 @@ export default function ProblemStatements() {
                 <h2 className="text-xl font-bold mb-2 text-center">
                   {problem.title}
                 </h2>
-                <p>{problem.description}</p>
-                <p>
+                <p className="italic">{problem.description}</p>
+                <p className="italic">
                   <strong>Applications:</strong> {problem.applications}
                 </p>
               </div>
