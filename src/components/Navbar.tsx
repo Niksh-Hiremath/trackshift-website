@@ -34,11 +34,9 @@ export function PCNavbar() {
         <li>
           <Link href="#prizes">Prizes</Link>
         </li>
-        {/* <li>
-          <Link href="#" className="">
-            Jury
-          </Link>
-        </li> */}
+        <li>
+          <Link href="/faqs">FAQs</Link>
+        </li>
         <li>
           <Link href="mailto:trackshift2025@gmail.com">Contact</Link>
         </li>

@@ -28,8 +28,8 @@ export default function Hero() {
           />
           <div className="mx-4 opacity-50">|</div>
           <Image
-            src="/Hass.svg"
-            alt="Money Gram Hass F1 Logo"
+            src="/Haas.svg"
+            alt="MoneyGram Haas F1 Logo"
             width={120}
             height={120}
             className="h-14 w-auto aspect-auto"
@@ -45,9 +45,10 @@ export default function Hero() {
             <br />
             Innovate<span className="text-[#D6001C]">.</span>
           </h1>
-            <p className="max-md:text-center italic text-[#aaaaaa] text-xl">
-            Winners take home the prize pool, a funded internship and an visit to MoneyGram Haas F1 facility, UK.
-            </p>
+          <p className="max-md:text-center italic text-[#aaaaaa] text-xl">
+            Winners take home the prize pool, an internship and a visit to
+            MoneyGram Haas F1 facility, UK.
+          </p>
         </div>
         <div className="flex flex-row gap-16">
           <div>

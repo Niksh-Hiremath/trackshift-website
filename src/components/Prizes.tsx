@@ -10,8 +10,8 @@ export default function Prizes() {
       className="w-full flex flex-col items-center max-w-4xl max-md:px-10 gap-10 md:gap-6 z-1 scroll-mt-16"
       id="prizes"
     >
-      <h1 className={`${orbitron.className} text-5xl whitespace-nowrap text-center`}>
-        Your Ticket To{" "}
+      <h1 className={`${orbitron.className} text-5xl text-center`}>
+        Your Ticket To <br />
         <span className="text-[#D6001C] font-bold">
           MoneyGram Haas F1 Team Facility, UK
         </span>
@@ -31,7 +31,9 @@ export default function Prizes() {
           <p className={`${orbitron.className} text-2xl`}>
             2 Day UK Trip to visit MoneyGram Haas F1 facilities
           </p>
-           <p className="text-[#aaaaaa] text-lg">Ride the fast lane to the MoneyGram Haas F1 Team Facility in the UK.</p>
+          <p className="text-[#aaaaaa] text-lg">
+            Ride the fast lane to the MoneyGram Haas F1 Team Facility in the UK.
+          </p>
           <p className="text-[#979797]">For Top 3 teams!</p>
         </div>
         <Image
@@ -44,7 +46,7 @@ export default function Prizes() {
       </div>
       <div className="flex flex-row w-full items-center gap-10">
         <Image
-          src="/Prize2.avif"
+          src="/Prize2.svg"
           alt="Prizes"
           width={900}
           height={600}
@@ -59,7 +61,9 @@ export default function Prizes() {
           <p className={`${orbitron.className} text-2xl`}>
             1 - Month Internship Opportunity at Mphasis
           </p>
-          <p className="text-[#aaaaaa] text-lg">Ride the fast lane to the MoneyGram Haas F1 Team Facility in the UK.</p>
+          <p className="text-[#aaaaaa] text-lg">
+            Secure an opportunity to shift gears into professional growth.
+          </p>
           <p className="text-[#979797]">For Top 3 teams!</p>
         </div>
       </div>

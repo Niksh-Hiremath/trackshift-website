@@ -2,7 +2,7 @@ import React from "react";
 import { Orbitron } from "next/font/google";
 import Image from "next/image";
 
-const orbitron = Orbitron({ subsets: ["latin"], weight: "900" });
+const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "900"] });
 
 const problemStatements = [
   {
@@ -34,7 +34,9 @@ export default function ProblemStatements() {
       className="w-full flex flex-col max-md:px-9 max-w-5xl items-center my-10 scroll-mt-16"
       id="problem-statements"
     >
-      <h1 className={`${orbitron.className} text-4xl self-start mb-8 mt-10`}>
+      <h1
+        className={`${orbitron.className} text-4xl self-start mb-8 mt-10 font-bold`}
+      >
         PROBLEM STATEMENTS<span className="text-[#D6001C]">.</span>
       </h1>
       <div className="flex flex-col md:flex-row justify-around w-full gap-6">
@@ -52,7 +54,9 @@ export default function ProblemStatements() {
                 className="absolute top-0 left-1/2 -translate-x-1/2 z-0"
               />
               <div className="relative flex flex-col gap-8 justify-center px-6 z-1">
-                <h2 className="text-xl font-bold mb-2 text-center">
+                <h2
+                  className={`${orbitron.className} text-2xl mb-2 text-center`}
+                >
                   {problem.title}
                 </h2>
                 <p className="italic">{problem.description}</p>
