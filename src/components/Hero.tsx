@@ -17,7 +17,7 @@ export default function Hero() {
           height={500}
           className=""
         />
-        <p className="opacity-75 mt-2">IN ASSOCIATION WITH</p>
+        <p className="opacity-75 mt-2 text-2xl">in association with</p>
         <div className="flex flex-row items-center">
           <Image
             src="/DSBrar.svg"
@@ -45,10 +45,9 @@ export default function Hero() {
             <br />
             Innovate<span className="text-[#D6001C]">.</span>
           </h1>
-          <p className="max-md:text-center">
-            Winners take home the prize pool, a funded internship and an all
-            expenses-paid trip to an F1 facility in the UK.
-          </p>
+            <p className="max-md:text-center italic text-[#aaaaaa] text-xl">
+            Winners take home the prize pool, a funded internship and an visit to MoneyGram Haas F1 facility, UK.
+            </p>
         </div>
         <div className="flex flex-row gap-16">
           <div>
