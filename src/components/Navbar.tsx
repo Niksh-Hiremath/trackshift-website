@@ -43,7 +43,7 @@ export function PCNavbar() {
       </ul>
       <button className="bg-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition 300ms">
         <Link
-          href="https://trackshift.devfolio.co/"
+          href="https://trackshift.devpost.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -127,7 +127,7 @@ export function MobileNavbar() {
             Contact
           </Link>
           <Link
-            href="https://trackshift.devfolio.co/"
+            href="https://trackshift.devpost.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#D6001C] rounded-md py-2 px-4 text-white w-fit mt-2 hover:opacity-90 transition duration-300"
