@@ -65,7 +65,7 @@ export default function Hero() {
         <div className="flex flex-row gap-8">
           <button className="bg-[#ED3237] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition 300ms">
             <Link
-              href="https://trackshift.devfolio.co/"
+              href="https://trackshift.devpost.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
