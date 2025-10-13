@@ -4,8 +4,8 @@ import { PCNavbar, MobileNavbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Trackshift",
-  description: "Trackshift Hackathon",
+  title: "TrackShift",
+  description: "TrackShift Innovation Challenge",
 };
 
 export default function RootLayout({

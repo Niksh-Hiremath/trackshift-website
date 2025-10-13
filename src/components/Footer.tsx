@@ -36,7 +36,7 @@ export default function Footer() {
           </Link>
         </p>
         <p className="text-[#4f4a4a]">
-          2025 &copy; All rights reserved by Trackshift
+          2025 &copy; All rights reserved by TrackShift
         </p>
         <div className="flex flex-row gap-3 mt-2">
           <Link
