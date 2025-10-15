@@ -29,13 +29,13 @@ export function PCNavbar() {
       </div>
       <ul className="flex flex-row gap-8">
         <li>
-          <Link href="#timeline">Timeline</Link>
+          <Link href="/#timeline">Timeline</Link>
         </li>
         <li>
-          <Link href="#problem-statements">Problem Statements</Link>
+          <Link href="/#problem-statements">Problem Statements</Link>
         </li>
         <li>
-          <Link href="#prizes">Prizes</Link>
+          <Link href="/#prizes">Prizes</Link>
         </li>
         <li>
           <Link href="/faqs">FAQs</Link>
@@ -113,33 +113,26 @@ export function MobileNavbar() {
       {open && (
         <div className="absolute top-full left-0 w-full bg-[#0d0d0d] opacity-95 flex flex-col items-center py-4 gap-4 animate-fade-in z-10">
           <Link
-            href="#timeline"
+            href="/#timeline"
             className="w-full text-center py-2"
             onClick={() => setOpen(false)}
           >
             Timeline
           </Link>
           <Link
-            href="#problem-statements"
+            href="/#problem-statements"
             className="w-full text-center py-2"
             onClick={() => setOpen(false)}
           >
             Problem Statements
           </Link>
           <Link
-            href="#prizes"
+            href="/#prizes"
             className="w-full text-center py-2"
             onClick={() => setOpen(false)}
           >
             Prizes
           </Link>
-          {/* <Link
-            href="#"
-            className="w-full text-center py-2"
-            onClick={() => setOpen(false)}
-          >
-            Jury
-          </Link> */}
           <Link
             href="mailto:trackshift2025@gmail.com"
             className="w-full text-center py-2"
