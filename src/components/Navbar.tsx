@@ -29,6 +29,9 @@ export function PCNavbar() {
       </div>
       <ul className="flex flex-row gap-8">
         <li>
+          <Link href="#timeline">Timeline</Link>
+        </li>
+        <li>
           <Link href="#problem-statements">Problem Statements</Link>
         </li>
         <li>
@@ -41,15 +44,26 @@ export function PCNavbar() {
           <Link href="mailto:trackshift2025@gmail.com">Contact</Link>
         </li>
       </ul>
-      <button className="bg-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition 300ms">
-        <Link
-          href="https://trackshift.devpost.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Register
-        </Link>
-      </button>
+      <div className="flex flex-row gap-4">
+        <button className="bg-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition 300ms">
+          <Link
+            href="https://trackshift.devpost.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register
+          </Link>
+        </button>
+        <button className="outline outline-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-80 transition 300ms">
+          <Link
+            href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Community
+          </Link>
+        </button>
+      </div>
     </div>
   );
 }
@@ -99,6 +113,13 @@ export function MobileNavbar() {
       {open && (
         <div className="absolute top-full left-0 w-full bg-[#0d0d0d] opacity-95 flex flex-col items-center py-4 gap-4 animate-fade-in z-10">
           <Link
+            href="#timeline"
+            className="w-full text-center py-2"
+            onClick={() => setOpen(false)}
+          >
+            Timeline
+          </Link>
+          <Link
             href="#problem-statements"
             className="w-full text-center py-2"
             onClick={() => setOpen(false)}
@@ -134,6 +155,15 @@ export function MobileNavbar() {
             onClick={() => setOpen(false)}
           >
             Register
+          </Link>
+          <Link
+            href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="outline outline-[#D6001C] rounded-md py-2 px-4 text-white w-fit hover:opacity-80 transition duration-300"
+            onClick={() => setOpen(false)}
+          >
+            Join Community
           </Link>
         </div>
       )}

@@ -16,7 +16,7 @@ export default function Footer() {
         />
         <div className="flex flex-row gap-6 text-sm mt-4">
           <Link
-            href="https://www.instagram.com/trackshift_plaksha/"
+            href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#D6001C] transition-colors"
@@ -39,14 +39,14 @@ export default function Footer() {
           2025 &copy; All rights reserved by Trackshift
         </p>
         <div className="flex flex-row gap-3 mt-2">
-          <Link
+          {/* <Link
             href="#"
             // target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#D6001C] transition-colors"
           >
             <FaLinkedin size={20} />
-          </Link>
+          </Link> */}
           <Link
             href="https://www.instagram.com/trackshift_plaksha/"
             target="_blank"
@@ -56,8 +56,8 @@ export default function Footer() {
             <FaInstagram size={20} />
           </Link>
           <Link
-            href="#"
-            // target="_blank"
+            href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
+            target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#D6001C] transition-colors"
           >

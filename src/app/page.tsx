@@ -1,8 +1,10 @@
 import React from "react";
 import Hero from "@/components/Hero";
+import Timeline from "@/components/Timeline";
 import Car from "@/components/Car";
 import ProblemStatements from "@/components/ProblemStatements";
 import Prizes from "@/components/Prizes";
+import Eligibility from "@/components/Eligibility";
 import Image from "next/image";
 import PitCrew from "@/components/PitCrew";
 import Allies from "@/components/Allies";
@@ -12,7 +14,9 @@ export default function Home() {
     <main className="flex flex-col items-center">
       <Hero />
       <Car />
+      <Timeline />
       <ProblemStatements />
+      <Eligibility />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1439"
@@ -48,8 +52,8 @@ export default function Home() {
           fill="#D6001C"
         />
       </svg>
-      <PitCrew />
       <Allies />
+      <PitCrew />
       <Image
         src="/HeroF1.svg"
         alt="F1 Car"
