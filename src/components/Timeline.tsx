@@ -10,10 +10,10 @@ type Event = {
 };
 
 const events: Event[] = [
-  { title: "Registrations Open", date: "Ongoing", status: "ongoing" },
-  { title: "Evaluations (Round 1)", date: "Ongoing", status: "ongoing" },
+  { title: "Registrations", date: "Ongoing", status: "ongoing" },
+  { title: "Idea Submissions", date: "Ongoing", status: "ongoing" },
   {
-    title: "Last Date to Register",
+    title: "Last Date to Register & Submit Idea",
     date: "October 25, 2025",
     status: "upcoming",
   },
@@ -23,7 +23,7 @@ const events: Event[] = [
     status: "upcoming",
   },
   {
-    title: "Final Challenge Dates",
+    title: "Final Challenge",
     date: "November 15-16, 2025",
     status: "upcoming",
   },
@@ -44,16 +44,29 @@ export default function Timeline() {
         {events.map((e, i) => (
           <div
             key={i}
-            className="flex-1 rounded-lg p-4 border border-[#D6001C] flex flex-col items-center text-center bg-gradient-to-b from-black/60 to-black/30"
+            className="flex-1 rounded-lg p-4 border border-[#D6001C] flex flex-col justify-between items-center text-center bg-gradient-to-b from-black/60 to-black/30 min-h-[10rem]"
           >
-            <div
-              className="h-3 w-3 rounded-full mb-2"
-              style={{
-                background: e.status === "ongoing" ? "#D6001C" : "#aaaaaa",
-              }}
-            />
-            <h3 className="font-medium text-lg">{e.title}</h3>
-            <p className="opacity-75 mt-1">{e.date}</p>
+            <div className="w-full flex flex-col items-center">
+              <div
+                className="h-3 w-3 rounded-full mb-2"
+                style={{
+                  background:
+                    e.status === "ongoing"
+                      ? "#4E963A"
+                      : e.status === "completed"
+                      ? "#D6001C"
+                      : "#AAAAAA",
+                }}
+              />
+            </div>
+
+            <div className="flex-1 flex items-center justify-center w-full">
+              <h3 className={`${orbitron.className} text-lg`}>{e.title}</h3>
+            </div>
+
+            <div className="w-full flex items-end justify-center">
+              <p className="mt-1 text-gray-400">{e.date}</p>
+            </div>
           </div>
         ))}
       </div>

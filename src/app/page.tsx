@@ -23,7 +23,7 @@ export default function Home() {
         height="295"
         viewBox="0 0 1439 295"
         fill="none"
-        className="w-full -translate-y-14"
+        className="w-full -translate-y-14 md:-translate-y-10"
       >
         <path
           d="M1438 0H820.582H1V219L1183.93 292L1438 159.65V0Z"

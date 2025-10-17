@@ -15,7 +15,7 @@ export function PCNavbar() {
             alt="Geek Room Logo"
             width={100}
             height={100}
-            className="h-13 w-auto aspect-auto"
+            className="h-9 w-auto aspect-auto"
           />
           <div className="mx-2 opacity-50">|</div>
           <Image
@@ -23,7 +23,7 @@ export function PCNavbar() {
             alt="LEAP Logo"
             width={100}
             height={100}
-            className="h-15 w-auto aspect-auto"
+            className="h-11 w-auto aspect-auto"
           />
         </Link>
       </div>
@@ -71,14 +71,14 @@ export function PCNavbar() {
 export function MobileNavbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="w-full flex items-center justify-between px-4 pb-4 pt-6 sticky top-0 left-0 z-10 bg-[#0d0d0d]">
+    <nav className="w-full flex items-center justify-between px-8 pb-4 pt-6 sticky top-0 left-0 z-10 bg-[#0d0d0d]">
       <Link href="/" className="flex flex-row items-center">
         <Image
           src="/GeekRoom.svg"
           alt="Geek Room Logo"
           width={80}
           height={80}
-          className="h-11 w-auto aspect-auto"
+          className="h-9 w-auto aspect-auto"
         />
         <div className="mx-3 opacity-50">|</div>
         <Image
@@ -86,7 +86,7 @@ export function MobileNavbar() {
           alt="LEAP Logo"
           width={80}
           height={80}
-          className="h-13 w-auto aspect-auto"
+          className="h-11 w-auto aspect-auto"
         />
       </Link>
       <button
