@@ -10,17 +10,17 @@ type Event = {
 };
 
 const events: Event[] = [
-  { title: "Registrations", date: "Ongoing", status: "ongoing" },
-  { title: "Idea Submissions", date: "Ongoing", status: "ongoing" },
+  { title: "Registrations", date: "Completed", status: "completed" },
+  { title: "Idea Submissions", date: "Completed", status: "completed" },
   {
     title: "Last Date to Register & Submit Idea",
-    date: "October 25, 2025",
-    status: "upcoming",
+    date: "Completed",
+    status: "completed",
   },
   {
     title: "Shortlisting Announcement",
-    date: "October 31, 2025",
-    status: "upcoming",
+    date: "Completed",
+    status: "completed",
   },
   {
     title: "Final Challenge",
