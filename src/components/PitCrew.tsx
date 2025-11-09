@@ -13,12 +13,6 @@ export default function PitCrew() {
           image: "/GeekRoom.svg",
         },
         {
-          name: "LEAP AI",
-          title: undefined,
-          description: undefined,
-          image: "/LEAP.svg",
-        },
-        {
           name: "HackCulture",
           title: undefined,
           description: undefined,

@@ -24,7 +24,7 @@ export default function Card({
           src={image}
           alt={name}
           fill
-          className={"object-contain " + (smallerImage ? "py-5" : "")}
+          className={"object-contain " + (smallerImage ? "py-7" : "")}
           sizes="(max-width: 768px) 100vw, 368px"
         />
       </div>

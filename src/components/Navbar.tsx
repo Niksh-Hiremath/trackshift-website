@@ -17,14 +17,6 @@ export function PCNavbar() {
             height={100}
             className="h-9 w-auto aspect-auto"
           />
-          <div className="mx-2 opacity-50">|</div>
-          <Image
-            src="/LEAP.svg"
-            alt="LEAP Logo"
-            width={100}
-            height={100}
-            className="h-11 w-auto aspect-auto"
-          />
         </Link>
       </div>
       <ul className="flex flex-row gap-8">
@@ -79,14 +71,6 @@ export function MobileNavbar() {
           width={80}
           height={80}
           className="h-9 w-auto aspect-auto"
-        />
-        <div className="mx-3 opacity-50">|</div>
-        <Image
-          src="/LEAP.svg"
-          alt="LEAP Logo"
-          width={80}
-          height={80}
-          className="h-11 w-auto aspect-auto"
         />
       </Link>
       <button
