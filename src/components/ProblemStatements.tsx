@@ -52,6 +52,7 @@ export default function ProblemStatements() {
                 width={500}
                 height={500}
                 className="absolute top-0 left-1/2 -translate-x-1/2 z-0"
+                priority
               />
               <div className="relative flex flex-col gap-8 justify-center px-6 z-1">
                 <h2
@@ -70,6 +71,7 @@ export default function ProblemStatements() {
                 width={500}
                 height={500}
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 z-0"
+                priority
               />
             </div>
             <div style={{ height: 450 }} />

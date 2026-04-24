@@ -33,6 +33,7 @@ export default function Car() {
           width={300}
           height={98}
           className="ml-auto"
+          priority
         />
       </div>
       <div className="hidden md:flex flex-row items-center w-full">
@@ -46,6 +47,7 @@ export default function Car() {
           width={1135}
           height={329}
           className="ml-auto"
+          priority
         />
       </div>
     </>

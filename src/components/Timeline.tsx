@@ -10,22 +10,22 @@ type Event = {
 };
 
 const events: Event[] = [
-  { title: "Registrations", date: "Completed", status: "completed" },
-  { title: "Idea Submissions", date: "Completed", status: "completed" },
-  {
-    title: "Last Date to Register & Submit Idea",
-    date: "Completed",
-    status: "completed",
-  },
+  { title: "Registrations", date: "October 25, 2025", status: "completed" },
+  { title: "Idea Submissions", date: "October 25, 2025", status: "completed" },
+  // {
+  //   title: "Last Date to Register & Submit Idea",
+  //   date: "October 25, 2025",
+  //   status: "completed",
+  // },
   {
     title: "Shortlisting Announcement",
-    date: "Completed",
+    date: "October 31, 2025",
     status: "completed",
   },
   {
     title: "Final Challenge",
     date: "November 15-16, 2025",
-    status: "upcoming",
+    status: "completed",
   },
 ];
 

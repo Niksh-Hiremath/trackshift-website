@@ -15,7 +15,7 @@ export default function Hero() {
           alt="Trackshift Logo"
           width={500}
           height={500}
-          className=""
+          priority
         />
         <p className="opacity-75 mt-2 text-2xl">in association with</p>
         <div className="flex flex-row items-center">
@@ -25,6 +25,7 @@ export default function Hero() {
             width={120}
             height={120}
             className="h-14 w-auto aspect-auto"
+            priority
           />
           <div className="mx-4 opacity-50">|</div>
           <Image
@@ -33,6 +34,7 @@ export default function Hero() {
             width={120}
             height={120}
             className="h-14 w-auto aspect-auto"
+            priority
           />
         </div>
       </div>

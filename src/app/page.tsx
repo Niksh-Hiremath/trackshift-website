@@ -60,6 +60,7 @@ export default function Home() {
         width={800}
         height={600}
         className="w-full aspect-auto md:-translate-y-26 z-0"
+        priority
       />
     </main>
   );

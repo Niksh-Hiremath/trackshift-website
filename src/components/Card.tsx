@@ -26,6 +26,7 @@ export default function Card({
           fill
           className={"object-contain " + (smallerImage ? "py-7" : "")}
           sizes="(max-width: 768px) 100vw, 368px"
+          priority
         />
       </div>
       {/* <h3 className={`${orbitron.className} text-lg font-bold`}>{name}</h3> */}

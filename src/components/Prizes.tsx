@@ -42,6 +42,7 @@ export default function Prizes() {
           width={900}
           height={600}
           className="hidden md:block w-1/2 rounded"
+          priority
         />
       </div>
       <div className="flex flex-row w-full items-center gap-10">
@@ -51,6 +52,7 @@ export default function Prizes() {
           width={900}
           height={600}
           className="hidden md:block w-1/2 rounded"
+          priority
         />
         <div className="md:w-1/2 flex flex-col gap-2">
           <h2
