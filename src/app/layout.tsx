@@ -24,7 +24,7 @@ export default function RootLayout({
         <div className="flex md:hidden w-full">
           <MobileNavbar />
         </div>
-        <div className="flex-grow w-full md:translate-y-26">{children}</div>
+        <div className="flex-grow w-full">{children}</div>
         <Footer />
       </body>
     </html>

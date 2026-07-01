@@ -1,65 +1,14 @@
-import React from "react";
-import Hero from "@/components/Hero";
-import Timeline from "@/components/Timeline";
-import Car from "@/components/Car";
-import ProblemStatements from "@/components/ProblemStatements";
-import Prizes from "@/components/Prizes";
-import Eligibility from "@/components/Eligibility";
 import Image from "next/image";
-import PitCrew from "@/components/PitCrew";
-import Allies from "@/components/Allies";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
-      <Hero />
-      <Car />
-      <Timeline />
-      <ProblemStatements />
-      <Eligibility />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1439"
-        height="295"
-        viewBox="0 0 1439 295"
-        fill="none"
-        className="w-full -translate-y-14 md:-translate-y-10"
-      >
-        <path
-          d="M1438 0H820.582H1V219L1183.93 292L1438 159.65V0Z"
-          fill="#0D0D0D"
-        />
-        <path
-          d="M820.582 0C875.37 0 930.159 0 984.947 0C1135.96 0 1286.98 0 1438 0C1438 35.2873 1438 70.5746 1438 105.862C1438 123.791 1437.92 141.721 1437.8 159.65L1437.91 159.472C1380.17 189.044 1322.14 218.066 1264.48 247.786C1237.26 261.814 1210.04 275.834 1182.81 289.849L1184.08 289.579C991.134 276.733 798.202 263.688 605.2 251.777C403.892 239.354 202.395 230.015 1.02161 218.649L1.35156 219C1.13232 177.26 1 135.519 1 93.7788C1 62.5192 1 31.2596 1 0C219.406 0 437.811 0 656.216 0C711.005 0 765.793 0 820.582 0C765.793 0 711.005 0 656.216 0C437.811 0 219.406 0 1 0C1 31.2596 1 62.5192 1 93.7788C1 135.519 0.867676 177.26 0.648438 219L0.978394 219.351C202.221 232.831 403.338 248.337 604.645 260.76C797.648 272.671 990.72 283.447 1183.78 294.421L1185.05 294.151C1212.14 279.872 1239.23 265.598 1266.33 251.333C1323.73 221.113 1380.77 190.197 1438.09 159.829L1438.2 159.65C1438.08 141.721 1438 123.791 1438 105.862C1438 70.5746 1438 35.2873 1438 0C1286.98 0 1135.96 0 984.947 0C930.159 0 875.37 0 820.582 0Z"
-          fill="#D6001C"
-        />
-      </svg>
-      <Prizes />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1423"
-        height="295"
-        viewBox="0 0 1423 295"
-        fill="none"
-        className="w-full translate-y-16 md:translate-y-36"
-      >
-        <path
-          d="M-15 295H602.418H1422V76L239.07 3L-15 135.35V295Z"
-          fill="#0D0D0D"
-        />
-        <path
-          d="M602.418 295C547.63 295 492.841 295 438.053 295C287.035 295 136.018 295 -15 295C-15 259.713 -15 224.425 -15 189.138C-15 171.209 -14.9231 153.279 -14.799 135.35L-14.9071 135.528C42.8329 105.956 100.859 76.9336 158.522 47.2142C185.741 33.1856 212.965 19.1661 240.191 5.15102L238.921 5.42076C431.866 18.2674 624.798 31.3123 817.801 43.2227C1019.11 55.6456 1220.61 64.9853 1421.98 76.3509L1421.65 76C1421.87 117.74 1422 159.481 1422 201.221C1422 232.481 1422 263.74 1422 295C1203.59 295 985.189 295 766.784 295C711.995 295 657.207 295 602.418 295C657.207 295 711.995 295 766.784 295C985.189 295 1203.59 295 1422 295C1422 263.74 1422 232.481 1422 201.221C1422 159.481 1422.13 117.74 1422.35 76L1422.02 75.6491C1220.78 62.1688 1019.66 46.6627 818.355 34.2398C625.352 22.3294 432.28 11.5534 239.22 0.579241L237.95 0.848984C210.861 15.1275 183.77 29.4017 156.674 43.6667C99.2716 73.8868 42.2323 104.803 -15.0929 135.171L-15.201 135.35C-15.0769 153.279 -15 171.209 -15 189.138C-15 224.425 -15 259.713 -15 295C136.018 295 287.035 295 438.053 295C492.841 295 547.63 295 602.418 295Z"
-          fill="#D6001C"
-        />
-      </svg>
-      <Allies />
-      <PitCrew />
+    <main className="w-full flex items-center justify-center overflow-hidden py-6">
       <Image
-        src="/HeroF1.svg"
-        alt="F1 Car"
-        width={800}
-        height={600}
-        className="w-full aspect-auto md:-translate-y-26 z-0"
+        src="/HeroBanner.jpg"
+        alt="TrackShift hero banner"
+        width={1920}
+        height={1080}
+        className="block w-full h-auto"
         priority
       />
     </main>

@@ -1,13 +1,12 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export function PCNavbar() {
   return (
-    <div className="w-full mx-4 lg:mx-8 flex items-center justify-between sticky top-0 left-0 pt-4 z-10">
+    <nav className="w-full mx-4 lg:mx-8 flex items-center justify-between sticky top-0 left-0 pt-4 z-10">
       <div className="mx-4">
         <Link href="/" className="flex flex-row items-center">
           <Image
@@ -19,25 +18,8 @@ export function PCNavbar() {
           />
         </Link>
       </div>
-      <ul className="flex flex-row gap-8">
-        <li>
-          <Link href="/#timeline">Timeline</Link>
-        </li>
-        <li>
-          <Link href="/#problem-statements">Problem Statements</Link>
-        </li>
-        <li>
-          <Link href="/#prizes">Prizes</Link>
-        </li>
-        <li>
-          <Link href="/faqs">FAQs</Link>
-        </li>
-        <li>
-          <Link href="mailto:trackshift2025@gmail.com">Contact</Link>
-        </li>
-      </ul>
-      <div className="flex flex-row gap-4">
-        <button className="bg-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition 300ms">
+      <div className="flex flex-row gap-4 mr-4">
+        <button className="bg-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-90 transition duration-300">
           <Link
             href="https://trackshift.devpost.com/"
             target="_blank"
@@ -46,7 +28,7 @@ export function PCNavbar() {
             Register
           </Link>
         </button>
-        <button className="outline outline-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-80 transition 300ms">
+        <button className="outline outline-[#D6001C] rounded-md py-2 px-4 cursor-pointer hover:opacity-80 transition duration-300">
           <Link
             href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
             target="_blank"
@@ -56,14 +38,13 @@ export function PCNavbar() {
           </Link>
         </button>
       </div>
-    </div>
+    </nav>
   );
 }
 
 export function MobileNavbar() {
-  const [open, setOpen] = useState(false);
   return (
-    <nav className="w-full flex items-center justify-between px-8 pb-4 pt-6 sticky top-0 left-0 z-10 bg-[#0d0d0d]">
+    <nav className="w-full flex items-center justify-between px-4 sm:px-8 pb-4 pt-6 sticky top-0 left-0 z-10 bg-[#0d0d0d]">
       <Link href="/" className="flex flex-row items-center">
         <Image
           src="/GeekRoom.svg"
@@ -73,77 +54,24 @@ export function MobileNavbar() {
           className="h-9 w-auto aspect-auto"
         />
       </Link>
-      <button
-        className="flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
-        aria-label="Toggle menu"
-        onClick={() => setOpen((prev) => !prev)}
-      >
-        <span
-          className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${
-            open ? "rotate-45 translate-y-1.5" : ""
-          }`}
-        ></span>
-        <span
-          className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${
-            open ? "opacity-0" : ""
-          }`}
-        ></span>
-        <span
-          className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-            open ? "-rotate-45 -translate-y-1.5" : ""
-          }`}
-        ></span>
-      </button>
-      {open && (
-        <div className="absolute top-full left-0 w-full bg-[#0d0d0d] opacity-95 flex flex-col items-center py-4 gap-4 animate-fade-in z-10">
-          <Link
-            href="/#timeline"
-            className="w-full text-center py-2"
-            onClick={() => setOpen(false)}
-          >
-            Timeline
-          </Link>
-          <Link
-            href="/#problem-statements"
-            className="w-full text-center py-2"
-            onClick={() => setOpen(false)}
-          >
-            Problem Statements
-          </Link>
-          <Link
-            href="/#prizes"
-            className="w-full text-center py-2"
-            onClick={() => setOpen(false)}
-          >
-            Prizes
-          </Link>
-          <Link
-            href="mailto:trackshift2025@gmail.com"
-            className="w-full text-center py-2"
-            onClick={() => setOpen(false)}
-          >
-            Contact
-          </Link>
-          <Link
-            href="https://trackshift.devpost.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#D6001C] rounded-md py-2 px-4 text-white w-fit mt-2 hover:opacity-90 transition duration-300"
-            onClick={() => setOpen(false)}
-          >
-            Register
-          </Link>
-          <Link
-            href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="outline outline-[#D6001C] rounded-md py-2 px-4 text-white w-fit hover:opacity-80 transition duration-300"
-            onClick={() => setOpen(false)}
-          >
-            Join Community
-          </Link>
-        </div>
-      )}
+      <div className="flex flex-row items-center gap-2 text-right">
+        <Link
+          href="https://trackshift.devpost.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#D6001C] rounded-md py-1.5 px-2.5 text-xs sm:text-sm hover:opacity-90 transition duration-300"
+        >
+          Register
+        </Link>
+        <Link
+          href="https://chat.whatsapp.com/Ls44YxwT9t4Ia31U8pIk1B"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="outline outline-[#D6001C] rounded-md py-1.5 px-2.5 text-xs sm:text-sm hover:opacity-80 transition duration-300"
+        >
+          Join Community
+        </Link>
+      </div>
     </nav>
   );
 }
